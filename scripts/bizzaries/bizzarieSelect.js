@@ -5,11 +5,6 @@ const contentTarget = document.querySelector(".bizarre")
 
 const bizzarieSelect = () => {
     const bizzarie = useBizzarie()
-<<<<<<< HEAD
-// console.table(bizzarie)
-=======
-
->>>>>>> master
 
 
     eventHub.addEventListener(
@@ -27,13 +22,8 @@ const bizzarieSelect = () => {
 
     const render = bizzarieCollection => {
         contentTarget.innerHTML = `
-<<<<<<< HEAD
-            <select class="dropdown" id="bizzarieSelect">
-                <option value="0">Select a Bizzarie</option>
-=======
             <select class="bizarrieDropdown" id="bizzarieSelect">
                 <option value="0">Please select an Bizzarie...</option>
->>>>>>> master
                 ${bizzarieCollection.map(currentBizzarie => {
                 return `<option value="${currentBizzarie.name}">${currentBizzarie.name}</option>`
             })}

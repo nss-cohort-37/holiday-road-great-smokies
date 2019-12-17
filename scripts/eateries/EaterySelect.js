@@ -5,11 +5,6 @@ const contentTarget = document.querySelector(".eateries")
 
 const eaterySelect = () => {
     const eateries = useEateries()
-<<<<<<< HEAD
-    // console.table(eateries)
-=======
-
->>>>>>> master
     eventHub.addEventListener(
         "change",
         changeEvent => {
