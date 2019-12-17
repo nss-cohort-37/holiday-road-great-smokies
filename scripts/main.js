@@ -6,6 +6,7 @@ import { getParks } from "./parks/ParkProvider.js";
 import { getbizzareries } from "./bizzaries/bizzarieProvider.js"
 import bizzarieSelect from "./bizzaries/bizzarieSelect.js"
 import { weatherComponent } from "./weather/WeatherCard.js";
+import { itPreview } from "./itPreview.js";
 
 
 
@@ -20,7 +21,7 @@ getParks().then(
     () => {
         ParkSelect()
     }
-    ).then(weatherComponent)
+    ).then(weatherComponent).then(itPreview)
 
 getbizzareries().then(bizzarieSelect)
 

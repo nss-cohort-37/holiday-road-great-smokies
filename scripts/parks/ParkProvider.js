@@ -11,7 +11,6 @@ export const getParks = () => {
 
   .then(response => response.json())
   .then(parsedParks => {
-    console.table(parsedParks)
     parks = parsedParks.data.slice()
   })
 }
