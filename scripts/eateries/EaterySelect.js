@@ -5,7 +5,7 @@ const contentTarget = document.querySelector(".eateries")
 
 const eaterySelect = () => {
     const eateries = useEateries()
-    console.table(eateries)
+    // console.table(eateries)
     eventHub.addEventListener(
         "change",
         changeEvent => {

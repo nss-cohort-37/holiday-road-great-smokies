@@ -9,6 +9,6 @@ export const getEateries = () => {
         .then(response => response.json())
         .then(eateryArray => {
             eateries = eateryArray.slice()
-            console.table(eateryArray)
+            // console.table(eateryArray)
         })
 }
