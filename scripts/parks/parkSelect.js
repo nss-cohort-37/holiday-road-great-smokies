@@ -2,7 +2,7 @@ import { useParks } from "./ParkProvider.js"
 
 const eventHub = document.querySelector(".container")
 
-const contentTarget = document.querySelector(".filters__park")
+const contentTarget = document.querySelector(".parks")
 
 
 
@@ -29,7 +29,11 @@ eventHub.addEventListener("change", changeEvent => {
 })
 
 
-
+export const parkHolderText = () => {
+  contentTarget.innerHTML=`
+  <h4>Please wait, parks incoming</h4>
+  `
+}
 
 
 
@@ -72,4 +76,3 @@ export const ParkSelect = () => {
     render(parks)
 }
 
-export default ParkSelect
