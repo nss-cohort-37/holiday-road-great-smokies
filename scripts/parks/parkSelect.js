@@ -22,7 +22,7 @@ export const ParkSelect = () => {
     const parks = useParks()
 
 eventHub.addEventListener("change", changeEvent => {
-  if (changeEvent.target.classList.contains("dropdown")) {
+  if (changeEvent.target.classList.contains("parkDropdown")) {
     const parks = useParks()
     const parkID = changeEvent.target.value
     const foundPark = parks.find(park => {
@@ -50,9 +50,15 @@ eventHub.addEventListener("change", changeEvent => {
 
 
     eventHub.addEventListener("change", changeEvent => {
-      if (changeEvent.target.classList.contains("dropdown")) {
-        const selectedPark = changeEvent.target.value
+      if (changeEvent.target.classList.contains("parkDropdown")) {
+        const parks = useParks()
+        const parkID = changeEvent.target.value
+        const foundPark = parks.find(park => {
+        const firstCode = park.addresses[0].postalCode
+        return firstCode === parkID
+        })
 
+        const selectedPark = foundPark.fullName
         const message = new CustomEvent("parkSelected", {
           detail: {
             park: selectedPark
@@ -68,7 +74,7 @@ eventHub.addEventListener("change", changeEvent => {
     const render = parks => {
        
         contentTarget.innerHTML = `
-            <select class="dropdown" id="parkSelect">
+            <select class="parkDropdown" id="parkSelect">
                 <option value="0">Please select a park...</option>
                   ${
                     parks.map(park =>

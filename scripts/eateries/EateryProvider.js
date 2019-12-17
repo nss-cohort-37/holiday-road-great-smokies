@@ -9,6 +9,10 @@ export const getEateries = () => {
         .then(response => response.json())
         .then(eateryArray => {
             eateries = eateryArray.slice()
+<<<<<<< HEAD
             // console.table(eateryArray)
+=======
+          
+>>>>>>> master
         })
 }
