@@ -1,3 +1,6 @@
+
+
+
 const eventHub = document.querySelector(".container")
 const parkContent = document.querySelector(".parkPreview")
 const weatherContent = document.querySelector(".weather")
@@ -9,10 +12,15 @@ export const itPreview = () => {
   
   eventHub.addEventListener("parkSelected", event => {
     const currentParkName = event.detail.park 
+    const currentParkDescription = event.detail.description
     console.log(currentParkName)
     parkContent.innerHTML = `
     <p>${currentParkName}</p>
-    <button class="parkButton">Details</button>
+    <button id="dialog--" class="parkButton">Details</button>
+    <dialog class="park--description">
+    <div>${currentParkDescription}</div>
+    <button id="closeDialog">Close</button>
+    </dialog>
     
     `
   })
