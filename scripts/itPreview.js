@@ -25,7 +25,7 @@ export const itPreview = () => {
     <button class ="button--close" id="closeDialog">Close</button>
     </dialog>
     
-
+    
     `
   })
 

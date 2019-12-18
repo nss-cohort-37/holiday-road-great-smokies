@@ -27,3 +27,5 @@ getParks().then(
 getbizzareries().then(bizzarieSelect)
 
 getEateries().then(eaterySelect)
+
+weatherComponent()
