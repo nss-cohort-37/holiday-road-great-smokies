@@ -27,7 +27,14 @@ export const itPreview = () => {
     attractionContent.innerHTML = `
     <p>${currentAttractionName}</p>
     <button class="attractionButton">Details</button>
-    
+    <dialog id="dialog--">
+    <div>${event.detail.bizzarieName} </div>
+    <div>Description: ${event.detail.description}</div>
+    <div>Location: ${event.detail.city}, ${event.detail.state} </div>
+    <div>Restroom: ${event.detail.restrooms} </div>
+    <button class="button--close">Close </button>
+
+    </dialog>
     `
   })
 
@@ -36,8 +43,8 @@ export const itPreview = () => {
     console.log(event.detail.wifi)
     eateryContent.innerHTML = `
     <p>${currentEateryName}</p>
-    <button class="eateryButton" id="dialog--">Details</button>
-      <dialog id="dialog--${event.detail.id}">
+    <button class="eateryButton" id="dialog--${event.detail.id}">Details</button>
+      <dialog class="dialog--${event.detail.id}">
         <div>Discription:${event.detail.description}</div>
         <div>restrooms:${event.detail.restrooms}</div>
         <div>wifi:${event.detail.wifi}</div>

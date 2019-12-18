@@ -25,13 +25,13 @@ const eaterySelect = () => {
 
                 eventHub.dispatchEvent(new CustomEvent("eaterySelected", {
                     detail: {
-                        eateryName: eateryId,
+                        eateryName: name,
                         description: foundeatery.description,
                         city: foundeatery.city,
                         state: foundeatery.state,
                         wifi: foundeatery.ameneties.wifi,
                         restroom: foundeatery.ameneties.restrooms,
-
+                        id: eateryId
                     }
                 }))
             }
