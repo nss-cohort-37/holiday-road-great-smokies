@@ -12,3 +12,4 @@ dialog {
   background-color: #2c2f33;
   box-shadow: 100px 50px 50px #9146FF;
 }
+@import 'weather.css';
