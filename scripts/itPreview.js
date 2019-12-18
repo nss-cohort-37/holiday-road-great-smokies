@@ -13,7 +13,7 @@ export const itPreview = () => {
     parkContent.innerHTML = `
     <p>${currentParkName}</p>
     <button class="parkButton">Details</button>
-    
+
     `
   })
 
@@ -24,7 +24,14 @@ export const itPreview = () => {
     attractionContent.innerHTML = `
     <p>${currentAttractionName}</p>
     <button class="attractionButton">Details</button>
-    
+    <dialog id="dialog--">
+    <div>${event.detail.bizzarieName} </div>
+    <div>Description: ${event.detail.description}</div>
+    <div>Location: ${event.detail.city}, ${event.detail.state} </div>
+    <div>Restroom: ${event.detail.restrooms} </div>
+    <button class="button--close">Close </button>
+
+    </dialog>
     `
   })
 

@@ -12,9 +12,23 @@ const bizzarieSelect = () => {
         "change",
         changeEvent => {
             if (changeEvent.target.id === "bizzarieSelect") {
+const bizzarie = useBizzarie()
+const bizzarieId = changeEvent.target.value
+console.log(bizzarieId)
+const foundbizzarie = bizzarie.find(bizz => {
+    return bizz.id=== parseInt(bizzarieId, 10)
+    console.log(bizzId)
+}) 
+
+
                 eventHub.dispatchEvent(new CustomEvent("bizzarieSelected", {
                     detail: {
-                        bizzarieName: changeEvent.target.value
+                        bizzarieName: foundbizzarie.name,
+                        description: foundbizzarie.description,
+                        city: foundbizzarie.city,
+                        state: foundbizzarie.state,
+                        restrooms: foundbizzarie.ameneties.restrooms,
+                        id: bizzarieId
                     }
                 }))
             }
@@ -26,7 +40,7 @@ const bizzarieSelect = () => {
             <select class="bizarrieDropdown" id="bizzarieSelect">
                 <option value="0">Please select an Bizzarie...</option>
                 ${bizzarieCollection.map(currentBizzarie => {
-                return `<option value="${currentBizzarie.name}">${currentBizzarie.name}</option>`
+                return `<option value="${currentBizzarie.id}">${currentBizzarie.name}</option>`
             })}
             </select>
         `
