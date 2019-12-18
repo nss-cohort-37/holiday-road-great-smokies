@@ -7,7 +7,6 @@ const bizzarieSelect = () => {
     const bizzarie = useBizzarie()
 
 
-
     eventHub.addEventListener(
         "change",
         changeEvent => {
