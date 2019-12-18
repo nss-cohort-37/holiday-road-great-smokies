@@ -1,0 +1,15 @@
+.dropdowns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    background-color: rgb(148, 40, 148);
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgb(97, 1, 97);
+}
+.parks, .bazarrie, .eateries{
+    display: flex;
+    flex-basis: 25%;
+    
+}
+
