@@ -23,6 +23,7 @@ function FahrenheitConverter(valNum) {
   valNum = 9 / 5 * (valNum - 273) + 32
   return valNum
 }
+{/* <div>${new Date(dateOne).toLocaleDateString('en-US')}</div> */}
   
   const render = (weatherData) => {
 
@@ -36,35 +37,35 @@ function FahrenheitConverter(valNum) {
       <h3>5-Day Weather Forecast</h3>
       <div class="weatherBlock">
         <div class="weatherCard">
-          <h2>${dateOne}</h2>
+          <h2>${new Date(dateOne).toLocaleDateString('en-US')}</h2>
           <p>Description: ${weatherData[6].weather[0].main}</p>
           <p>Temperature: ${Math.floor(FahrenheitConverter(weatherData[6].main.temp))} F</p>
           <p>Humidity: ${weatherData[6].main.humidity}</p>
           <p>Wind Speed: ${weatherData[6].wind.speed} mph</p>
         </div>
         <div class="weatherCard">
-          <h2>${dateTwo}</h2>
+          <h2>${new Date(dateTwo).toLocaleDateString('en-US')}</h2>
           <p>Description: ${weatherData[14].weather[0].main}</p>
           <p>Temperature: ${Math.floor(FahrenheitConverter(weatherData[14].main.temp))} F</p>
           <p>Humidity: ${weatherData[14].main.humidity}</p>
           <p>Wind: ${weatherData[14].wind.speed} mph</p>
         </div>
         <div class="weatherCard">
-          <h2>${dateTree}</h2>
+          <h2>${new Date(dateTree).toLocaleDateString('en-US')}</h2>
           <p>Description: ${weatherData[22].weather[0].main}</p>
           <p>Temperature: ${Math.floor(FahrenheitConverter(weatherData[22].main.temp))} F</p>
           <p>Humidity: ${weatherData[22].main.humidity}</p>
           <p>Wind: ${weatherData[22].wind.speed} mph</p>
         </div>
         <div class="weatherCard">
-          <h2>${dateFour}</h2>
+          <h2>${new Date(dateFour).toLocaleDateString('en-US')}</h2>
           <p>Description: ${weatherData[30].weather[0].main}</p>
           <p>Temperature: ${Math.floor(FahrenheitConverter(weatherData[30].main.temp))} F</p>
           <p>Humidity: ${weatherData[30].main.humidity}</p>
           <p>Wind: ${weatherData[30].wind.speed} mph</p>
         </div>
         <div class="weatherCard">
-          <h2>${dateFive}</h2>
+          <h2>${new Date(dateFive).toLocaleDateString('en-US')}</h2>
           <p>Description: ${weatherData[38].weather[0].main}</p>
           <p>Temperature: ${Math.floor(FahrenheitConverter(weatherData[38].main.temp))} F</p>
           <p>Humidity: ${weatherData[38].main.humidity}</p>
