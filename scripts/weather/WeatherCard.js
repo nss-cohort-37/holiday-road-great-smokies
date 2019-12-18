@@ -23,8 +23,6 @@ function FahrenheitConverter(valNum) {
   valNum = 9 / 5 * (valNum - 273) + 32
   return valNum
 }
-
-  //Need data from 6, 14, 22, 30, 38
   
   const render = (weatherData) => {
 
