@@ -30,7 +30,7 @@ const eaterySelect = () => {
                         city: foundeatery.city,
                         state: foundeatery.state,
                         wifi: foundeatery.ameneties.wifi,
-                        restroom: foundeatery.ameneties.restrooms,
+                        restrooms: foundeatery.ameneties.restrooms,
                         id: eateryId
                     }
                 }))

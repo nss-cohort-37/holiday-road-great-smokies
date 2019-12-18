@@ -18,5 +18,5 @@ if(clickEvent.target.id.startsWith("dialog--")){
 
   })
    
-  export default Dialogs
 }
+export default Dialogs

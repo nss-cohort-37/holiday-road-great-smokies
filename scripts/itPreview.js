@@ -17,12 +17,12 @@ export const itPreview = () => {
     console.log(currentParkName)
     parkContent.innerHTML = `
     <p>${currentParkName}</p>
-    <button id="" class="parkButton">Details</button>
-    <dialog id="dialog--${currentParkName}" class="park--description">
+    <button id="dialog--${event.detail.id}" class="parkButton">Details</button>
+    <dialog id="dialog--${event.detail.id}" class="park--description">
     <div>
     <h4>Description: </h4>
     ${currentParkDescription}</div>
-    <button id="closeDialog">Close</button>
+    <button class ="button--close" id="closeDialog">Close</button>
     </dialog>
     
 
@@ -35,8 +35,8 @@ export const itPreview = () => {
     console.log(currentAttractionName)
     attractionContent.innerHTML = `
     <p>${currentAttractionName}</p>
-    <button class="attractionButton">Details</button>
-    <dialog id="dialog--">
+    <button class="attractionButton" id="dialog--${event.detail.id}">Details</button>
+    <dialog id="dialog--${event.detail.id}">
     <div>${event.detail.bizzarieName} </div>
     <div>Description: ${event.detail.description}</div>
     <div>Location: ${event.detail.city}, ${event.detail.state} </div>
@@ -54,7 +54,7 @@ export const itPreview = () => {
     <p>${currentEateryName}</p>
     <button class="eateryButton" id="dialog--${event.detail.id}">Details</button>
       <dialog class="dialog--${event.detail.id}">
-        <div>Discription:${event.detail.description}</div>
+        <div>Description:${event.detail.description}</div>
         <div>restrooms:${event.detail.restrooms}</div>
         <div>wifi:${event.detail.wifi}</div>
         <div>location:${event.detail.city}, ${event.detail.state}</div>
