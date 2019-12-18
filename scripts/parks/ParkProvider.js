@@ -5,7 +5,7 @@ export const useParks = () => {
 }
 
 export const getParks = () => {
-  return fetch("https://developer.nps.gov/api/v1/parks?api_key=ItBi4BedF5ncQIhvUV3Vl2hmtSog38gnGaeVxMT2&fields=addresses", {
+  return fetch("https://developer.nps.gov/api/v1/parks?api_key=AKIaxzlTDjKSD11PHylBcdrohl9zrbV1chzy3x9s&fields=addresses", {
     method: "GET"
   })
 

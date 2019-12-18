@@ -61,10 +61,12 @@ eventHub.addEventListener("change", changeEvent => {
 
         const selectedPark = foundPark.fullName
         const description = foundPark.description
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
         const message = new CustomEvent("parkSelected", {
           detail: {
             park: selectedPark,
-            description: description
+            description: description,
+            difficultyRating: randomNumber
           }
         })
 
