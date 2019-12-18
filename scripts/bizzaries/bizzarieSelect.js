@@ -16,7 +16,6 @@ const bizzarieId = changeEvent.target.value
 console.log(bizzarieId)
 const foundbizzarie = bizzarie.find(bizz => {
     return bizz.id=== parseInt(bizzarieId, 10)
-    console.log(bizzId)
 }) 
 
 
