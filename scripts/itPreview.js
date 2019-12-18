@@ -1,3 +1,5 @@
+import { useParks } from "./parks/ParkProvider"
+
 const eventHub = document.querySelector(".container")
 const parkContent = document.querySelector(".parkPreview")
 const weatherContent = document.querySelector(".weather")
@@ -6,13 +8,15 @@ const eateryContent = document.querySelector(".eateryPreview")
 
 
 export const itPreview = () => {
-  
+
   eventHub.addEventListener("parkSelected", event => {
     const currentParkName = event.detail.park 
+    const currentParkDescriptiion = event.detail.description
     console.log(currentParkName)
     parkContent.innerHTML = `
     <p>${currentParkName}</p>
     <button class="parkButton">Details</button>
+
     
     `
   })
