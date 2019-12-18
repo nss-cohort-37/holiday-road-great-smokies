@@ -24,8 +24,7 @@ export const itPreview = () => {
     ${currentParkDescription}</div>
     <button id="closeDialog">Close</button>
     </dialog>
-    <button class="parkButton">Details</button>
-
+    
 
     `
   })
