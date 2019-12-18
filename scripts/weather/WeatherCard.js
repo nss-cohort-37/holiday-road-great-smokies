@@ -1,8 +1,6 @@
 
 import { getWeather, useWeather } from "./WeatherProvider.js"
 
-
-
 export const weatherComponent = () => {
 
   const eventHub = document.querySelector(".container")
@@ -21,40 +19,46 @@ export const weatherComponent = () => {
   })
 })
 
+function FahrenheitConverter(valNum) {
+  valNum = 9 / 5 * (valNum - 273) + 32
+  return valNum
+}
+
   //Need data from 6, 14, 22, 30, 38
   
   const render = (weatherData) => {
+
     contentTarget.innerHTML = `
       <h3>5-Day Weather Forecast</h3>
       <h2>${weatherData[6].dt_txt}</h2>
       <p>Description: ${weatherData[6].weather[0].main}</p>
-      <p>Temperature: ${weatherData[6].main.temp}</p>
+      <p>Temperature: ${Math.floor(FahrenheitConverter(weatherData[6].main.temp))} F</p>
       <p>Humidity: ${weatherData[6].main.humidity}</p>
-      <p>Wind Speed: ${weatherData[6].wind.speed}</p>
+      <p>Wind Speed: ${weatherData[6].wind.speed} mph</p>
 
       <h2>${weatherData[14].dt_txt}</h2>
       <p>Description: ${weatherData[14].weather[0].main}</p>
-      <p>Temperature: ${weatherData[14].main.temp}</p>
+      <p>Temperature: ${Math.floor(FahrenheitConverter(weatherData[14].main.temp))} F</p>
       <p>Humidity: ${weatherData[14].main.humidity}</p>
-      <p>Wind: ${weatherData[14].wind.speed}</p>
+      <p>Wind: ${weatherData[14].wind.speed} mph</p>
 
       <h2>${weatherData[22].dt_txt}</h2>
       <p>Description: ${weatherData[22].weather[0].main}</p>
-      <p>Temperature: ${weatherData[22].main.temp}</p>
+      <p>Temperature: ${Math.floor(FahrenheitConverter(weatherData[22].main.temp))} F</p>
       <p>Humidity: ${weatherData[22].main.humidity}</p>
-      <p>Wind: ${weatherData[22].wind.speed}</p>
+      <p>Wind: ${weatherData[22].wind.speed} mph</p>
 
       <h2>${weatherData[30].dt_txt}</h2>
       <p>Description: ${weatherData[30].weather[0].main}</p>
-      <p>Temperature: ${weatherData[30].main.temp}</p>
+      <p>Temperature: ${Math.floor(FahrenheitConverter(weatherData[30].main.temp))} F</p>
       <p>Humidity: ${weatherData[30].main.humidity}</p>
-      <p>Wind: ${weatherData[30].wind.speed}</p>
+      <p>Wind: ${weatherData[30].wind.speed} mph</p>
 
       <h2>${weatherData[38].dt_txt}</h2>
       <p>Description: ${weatherData[38].weather[0].main}</p>
-      <p>Temperature: ${weatherData[38].main.temp}</p>
+      <p>Temperature: ${Math.floor(FahrenheitConverter(weatherData[38].main.temp))} F</p>
       <p>Humidity: ${weatherData[38].main.humidity}</p>
-      <p>Wind: ${weatherData[38].wind.speed}</p>
+      <p>Wind: ${weatherData[38].wind.speed} mph</p>
       `
   }
 
