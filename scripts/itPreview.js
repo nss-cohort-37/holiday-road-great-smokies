@@ -16,7 +16,6 @@ export const itPreview = () => {
     console.log(currentParkName)
     parkContent.innerHTML = `
     <p>${currentParkName}</p>
-<<<<<<< HEAD
     <button id="" class="parkButton">Details</button>
     <dialog id="dialog--${currentParkName}" class="park--description">
     <div>
@@ -25,10 +24,7 @@ export const itPreview = () => {
     <button id="closeDialog">Close</button>
     </dialog>
     
-=======
-    <button class="parkButton">Details</button>
 
->>>>>>> master
     `
   })
 
