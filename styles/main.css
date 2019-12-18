@@ -1,6 +1,2 @@
 @import 'weather.css';
 @import './dropdown.css';
-
-body {
-    background-color: #2C2F33;
-}
