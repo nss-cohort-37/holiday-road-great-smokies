@@ -16,9 +16,11 @@ export const itPreview = () => {
     console.log(currentParkName)
     parkContent.innerHTML = `
     <p>${currentParkName}</p>
-    <button id="dialog--" class="parkButton">Details</button>
-    <dialog class="park--description">
-    <div>${currentParkDescription}</div>
+    <button id="" class="parkButton">Details</button>
+    <dialog id="dialog--${currentParkName}" class="park--description">
+    <div>
+    <h4>Description: </h4>
+    ${currentParkDescription}</div>
     <button id="closeDialog">Close</button>
     </dialog>
     

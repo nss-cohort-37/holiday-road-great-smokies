@@ -63,7 +63,8 @@ eventHub.addEventListener("change", changeEvent => {
         const description = foundPark.description
         const message = new CustomEvent("parkSelected", {
           detail: {
-            park: selectedPark
+            park: selectedPark,
+            description: description
           }
         })
 
