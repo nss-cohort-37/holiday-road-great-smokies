@@ -25,8 +25,4 @@ getParks().then(
 
 getbizzareries().then(bizzarieSelect)
 
-getEateries().then(
-    () => {
-        eaterySelect()
-    }
-)
+getEateries().then(eaterySelect)
