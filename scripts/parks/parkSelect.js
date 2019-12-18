@@ -36,7 +36,8 @@ eventHub.addEventListener("change", changeEvent => {
 
     const message = new CustomEvent("weatherParkSelected", {
       detail: {
-        park: latlong
+        park: latlong,
+        id: parkID
       }
     })
     eventHub.dispatchEvent(message)
