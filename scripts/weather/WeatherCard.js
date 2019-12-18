@@ -24,7 +24,6 @@ function FahrenheitConverter(valNum) {
   return valNum
 }
 {/* <div>${new Date(dateOne).toLocaleDateString('en-US')}</div> */}
-  //Need data from 6, 14, 22, 30, 38
   
   const render = (weatherData) => {
 
