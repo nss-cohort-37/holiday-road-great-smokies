@@ -16,6 +16,7 @@ export const itPreview = () => {
     console.log(currentParkName)
     parkContent.innerHTML = `
     <p>${currentParkName}</p>
+<<<<<<< HEAD
     <button id="" class="parkButton">Details</button>
     <dialog id="dialog--${currentParkName}" class="park--description">
     <div>
@@ -24,6 +25,10 @@ export const itPreview = () => {
     <button id="closeDialog">Close</button>
     </dialog>
     
+=======
+    <button class="parkButton">Details</button>
+
+>>>>>>> master
     `
   })
 
@@ -34,7 +39,14 @@ export const itPreview = () => {
     attractionContent.innerHTML = `
     <p>${currentAttractionName}</p>
     <button class="attractionButton">Details</button>
-    
+    <dialog id="dialog--">
+    <div>${event.detail.bizzarieName} </div>
+    <div>Description: ${event.detail.description}</div>
+    <div>Location: ${event.detail.city}, ${event.detail.state} </div>
+    <div>Restroom: ${event.detail.restrooms} </div>
+    <button class="button--close">Close </button>
+
+    </dialog>
     `
   })
 
