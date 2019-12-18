@@ -41,7 +41,7 @@ const eaterySelect = () => {
     const render = eateryCollection => {
         contentTarget.innerHTML = `
             <select class="dropdown" id="eaterySelect">
-                <option value="0">Select an Eatery</option>
+                <option value="0">Please select an Eatery...</option>
                 ${eateryCollection.map(eatery => {
             return `<option value="${eatery.id}">${eatery.businessName}</option>`
         })}
