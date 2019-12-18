@@ -9,9 +9,25 @@ const eaterySelect = () => {
         "change",
         changeEvent => {
             if (changeEvent.target.id === "eaterySelect") {
+
+                const eateries = useEateries()
+                const eateryId = changeEvent.target.value
+                const foundeatry = eateries.find(
+                    eat => {
+                        return eat.id === parseInt(eateryId, 10)
+                    }
+                )
+
+
+
+                const name = foundeatry.businessName
+                console.log(name)
+
                 eventHub.dispatchEvent(new CustomEvent("eaterySelected", {
                     detail: {
-                        eateryName: changeEvent.target.value
+                        eateryName: name 
+                        
+
                     }
                 }))
             }
@@ -23,12 +39,12 @@ const eaterySelect = () => {
             <select class="dropdown" id="eaterySelect">
                 <option value="0">Select an Eatery</option>
                 ${eateryCollection.map(eatery => {
-            return `<option value="${eatery.businessName}">${eatery.businessName}</option>`
+            return `<option value="${eatery.id}">${eatery.businessName}</option>`
         })}
             </select>
         `
     }
-    
+
     render(eateries)
 }
 
