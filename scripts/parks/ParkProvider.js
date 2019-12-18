@@ -1,4 +1,35 @@
-let parks = []
+let parks = [
+  {
+    fullName:"A place",
+    description: "blah1",
+    latLong:"lat:38.916554, long:-77.025977",
+    addresses: [
+      {
+        postalCode:"15243",
+      }
+    ]
+  },
+  {
+    fullName:"a second place",
+    description: "blah2",
+    latLong:"lat:38.89231541, long:-77.00381882",
+    addresses: [
+      {
+        postalCode:"24321",
+      }
+    ]
+  },
+  {
+    fullName:"a third place",
+    description: "blah3",
+    latLong:"lat:25.97079602, long:-81.08120629",
+    addresses: [
+      {
+        postalCode:"32345",
+      }
+    ]
+  },
+]
 
 export const useParks = () => {
   return parks
