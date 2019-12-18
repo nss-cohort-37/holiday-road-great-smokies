@@ -18,14 +18,16 @@ import Dialogs from "./Dialogs.js";
 
 parkHolderText()
 
-getParks().then(
-    () => {
-        ParkSelect()
-    }
-    ).then(weatherComponent).then(itPreview).then(Dialogs)
-
+// getParks().then(
+//     () => {
+        
+//     }
+//     ).then().then().then()
+    ParkSelect()
+    itPreview()
+Dialogs()
+weatherComponent()
 getbizzareries().then(bizzarieSelect)
 
 getEateries().then(eaterySelect)
 
-weatherComponent()

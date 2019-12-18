@@ -1,0 +1,9 @@
+.weatherBlock{
+  display: flex;
+  flex-wrap: wrap;
+}
+.weatherCard{
+flex-basis: 12%;
+border: 1px solid black;
+box-shadow: 10px 5px 5px #9146FF;
+}
