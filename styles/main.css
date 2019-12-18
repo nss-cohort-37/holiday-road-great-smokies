@@ -3,7 +3,12 @@ background-color:#2C2F33;
 
 }
 
-h4 {
-  color: white;
+div {
+  color: #99AAB5;
 
+}
+
+dialog {
+  background-color: #2c2f33;
+  box-shadow: 100px 50px 50px #9146FF;
 }
