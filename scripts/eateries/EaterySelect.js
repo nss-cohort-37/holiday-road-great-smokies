@@ -12,7 +12,7 @@ const eaterySelect = () => {
 
                 const eateries = useEateries()
                 const eateryId = changeEvent.target.value
-                const foundeatry = eateries.find(
+                const foundeatery = eateries.find(
                     eat => {
                         return eat.id === parseInt(eateryId, 10)
                     }
@@ -20,13 +20,17 @@ const eaterySelect = () => {
 
 
 
-                const name = foundeatry.businessName
+                const name = foundeatery.businessName
                 console.log(name)
 
                 eventHub.dispatchEvent(new CustomEvent("eaterySelected", {
                     detail: {
-                        eateryName: name 
-                        
+                        eateryName: eateryId,
+                        description: foundeatery.description,
+                        city: foundeatery.city,
+                        state: foundeatery.state,
+                        wifi: foundeatery.ameneties.wifi,
+                        restroom: foundeatery.ameneties.restrooms,
 
                     }
                 }))
