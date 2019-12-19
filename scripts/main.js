@@ -8,6 +8,8 @@ import bizzarieSelect from "./bizzaries/bizzarieSelect.js"
 import { weatherComponent } from "./weather/WeatherCard.js";
 import { itPreview } from "./itPreview.js";
 import Dialogs from "./Dialogs.js";
+import { getDirections } from "./directions/DirectionProvider.js";
+import { DirectionComponent } from "./directions/DirectionComponent.js";
 
 
 
@@ -31,3 +33,4 @@ getbizzareries().then(bizzarieSelect)
 
 getEateries().then(eaterySelect)
 
+DirectionComponent()
