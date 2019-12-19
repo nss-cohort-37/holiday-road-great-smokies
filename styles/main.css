@@ -20,6 +20,7 @@ dialog {
   max-width: 80%;
 }
 
+
 .button--close, .attractionButton, .parkButton, .eateryButton, .button--save {
   background-color: #9146FF;
   border: none;
