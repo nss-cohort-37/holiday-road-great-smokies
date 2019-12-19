@@ -5,10 +5,5 @@
     justify-content: space-evenly;
     background-color: #9146FF;
     padding: 20px;
-    box-shadow: 2px 2px 2px blueviolet;
+    box-shadow: 3px 3px 3px blueviolet;
 }
-.parks, .bazarrie, .eateries{
-    display: flex;
-    flex-basis: 25%;
-}
-
