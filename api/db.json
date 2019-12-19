@@ -1,5 +1,34 @@
 {
   "itineraries": [
-
+    {
+      "park": "A place",
+      "bizzarie": "Elvis Memorial Chapel",
+      "eatery": "Club Paris",
+      "id": 1
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Elvis Memorial Chapel",
+      "eatery": "Club Paris",
+      "id": 2
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Elvis Memorial Chapel",
+      "eatery": "Club Paris",
+      "id": 3
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Elvis Memorial Chapel",
+      "eatery": "Club Paris",
+      "id": 4
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Elvis Memorial Chapel",
+      "eatery": "Club Paris",
+      "id": 5
+    }
   ]
 }
