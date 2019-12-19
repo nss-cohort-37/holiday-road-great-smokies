@@ -8,26 +8,29 @@ import bizzarieSelect from "./bizzaries/bizzarieSelect.js"
 import { weatherComponent } from "./weather/WeatherCard.js";
 import { itPreview } from "./itPreview.js";
 import Dialogs from "./Dialogs.js";
+import { saveItComponent } from "./savedItenerary/saved.js";
 
 
 
 
 
 
+ParkSelect()
+getbizzareries().then(bizzarieSelect).then(
+    getEateries).then(eaterySelect).then(
+        saveItComponent
+    )
+    
+    
 
-
-parkHolderText()
+// parkHolderText()
 
 // getParks().then(
 //     () => {
         
 //     }
 //     ).then().then().then()
-    ParkSelect()
     itPreview()
 Dialogs()
 weatherComponent()
-getbizzareries().then(bizzarieSelect)
-
-getEateries().then(eaterySelect)
 
