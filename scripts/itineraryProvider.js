@@ -1,19 +1,19 @@
 let iteneraries = []
 
 export const saveIteneraries = itenerary => {
-    return fetch('http//local:3000/db', {
+    return fetch('http://localhost:3000/itineraries', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(note)
+        body: JSON.stringify(itenerary)
     })
         .then(getIteneraries)
 }
 
 
 export const getIteneraries = () => {
-    return fetch('http//local:3000/db')
+    return fetch('http://localhost:3000/itineraries')
         .then(res => res.json())
         .then(parsedIteneraries => {
             iteneraries = parsedIteneraries.slice()
