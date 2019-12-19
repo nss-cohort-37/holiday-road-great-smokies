@@ -10,27 +10,30 @@ import { itPreview } from "./itPreview.js";
 import Dialogs from "./Dialogs.js";
 import { getDirections } from "./directions/DirectionProvider.js";
 import { DirectionComponent } from "./directions/DirectionComponent.js";
+import { saveItComponent } from "./savedItenerary/saved.js";
 
 
 
 
 
 
+ParkSelect()
+getbizzareries().then(bizzarieSelect).then(
+    getEateries).then(eaterySelect).then(
+        saveItComponent
+    )
+    
+    
 
-
-parkHolderText()
+// parkHolderText()
 
 // getParks().then(
 //     () => {
         
 //     }
 //     ).then().then().then()
-    ParkSelect()
     itPreview()
 Dialogs()
 weatherComponent()
-getbizzareries().then(bizzarieSelect)
-
-getEateries().then(eaterySelect)
 
 DirectionComponent()

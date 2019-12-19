@@ -48,9 +48,6 @@ eventHub.addEventListener("change", changeEvent => {
 
 
 
-
-
-
     eventHub.addEventListener("change", changeEvent => {
       if (changeEvent.target.classList.contains("parkDropdown")) {
         const parks = useParks()

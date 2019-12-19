@@ -1,22 +1,58 @@
-import { useParks } from "./parks/ParkProvider.js"
+import { useParks } from "./parks/ParkProvider.js";
+import {
+  saveIteneraries,
+  getIteneraries,
+  useIteneraries
+} from "./itineraryProvider.js";
 
-
-
-const eventHub = document.querySelector(".container")
-const parkContent = document.querySelector(".parkPreview")
-const weatherContent = document.querySelector(".weather")
-const attractionContent = document.querySelector(".attractionPreview")
-const eateryContent = document.querySelector(".eateryPreview")
-
+const eventHub = document.querySelector(".container");
+const parkContent = document.querySelector(".parkPreview");
+const weatherContent = document.querySelector(".weather");
+const attractionContent = document.querySelector(".attractionPreview");
+const eateryContent = document.querySelector(".eateryPreview");
+const contentTarget = document.querySelector(".savedIt");
 
 export const itPreview = () => {
+  eventHub.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id === "button--save") {
+      const newIt = {
+        park: document.querySelector("#currentParkName").textContent,
+        bizzarie: document.querySelector("#currentAttractionName").textContent,
+        eatery: document.querySelector("#currentEateryName").textContent
+      };
+
+      saveIteneraries(newIt)
+        .then(getIteneraries)
+        .then(() => {
+          const Itenerary = useIteneraries();
+          render(Itenerary);
+          console.log(Itenerary);
+        });
+    }
+  });
+
+  const render = Itenerary => {
+    contentTarget.innerHTML = Itenerary.map(ite => {
+     return `
+          <div class="park__field">
+              park: <p>${ite.park}</p>
+          </div>
+          <div class="bizzarie__field">
+              bizzarie: <p>${ite.bizzarie}</p>
+          </div>
+          <div class="eatery__field">
+              eatery: <p>${ite.eatery}</p>
+          </div>
+          `;
+    }).join("")
+  };
 
   eventHub.addEventListener("parkSelected", event => {
-    const currentParkName = event.detail.park 
-    const currentParkDescription = event.detail.description
-    console.log(currentParkName)
+    const currentParkName = event.detail.park;
+    const currentParkDescription = event.detail.description;
+    console.log(currentParkName);
     parkContent.innerHTML = `
-    <p>${currentParkName}</p>
+    <p id="currentParkName" value="${currentParkName}">${currentParkName}</p>
     <button id="dialog--${event.detail.id}" class="parkButton">Details</button>
     <dialog id="dialog--${event.detail.id}" class="park--description">
     <div>
@@ -26,15 +62,14 @@ export const itPreview = () => {
     </dialog>
     
     
-    `
-  })
-
+    `;
+  });
 
   eventHub.addEventListener("bizzarieSelected", event => {
-    const currentAttractionName = event.detail.bizzarieName
-    console.log(currentAttractionName)
+    const currentAttractionName = event.detail.bizzarieName;
+    console.log(currentAttractionName);
     attractionContent.innerHTML = `
-    <p>${currentAttractionName}</p>
+    <p id="currentAttractionName" value="${currentAttractionName}">${currentAttractionName}</p>
     <button class="attractionButton" id="dialog--${event.detail.id}">Details</button>
     <dialog id="dialog--${event.detail.id}">
     <div>${event.detail.bizzarieName} </div>
@@ -44,14 +79,14 @@ export const itPreview = () => {
     <button class="button--close">Close </button>
 
     </dialog>
-    `
-  })
+    `;
+  });
 
   eventHub.addEventListener("eaterySelected", event => {
-    const currentEateryName = event.detail.eateryName
-    console.log(event.detail.wifi)
+    const currentEateryName = event.detail.eateryName;
+    console.log(event.detail.wifi);
     eateryContent.innerHTML = `
-    <p>${currentEateryName}</p>
+    <p id="currentEateryName">${currentEateryName}</p>
     <button class="eateryButton" id="dialog--${event.detail.id}">Details</button>
       <dialog class="dialog--${event.detail.id}">
         <div>Description:${event.detail.description}</div>
@@ -61,20 +96,14 @@ export const itPreview = () => {
 
         <button class="button--close">Close Dialog</button>
       </dialog>  
-      <button class="button--save disabled">Save Itenerary </button>
+      <button class="button--save" id="button--save">Save Itenerary </button>
 
     
     
-    `
-
-  })
-
-
+    `;
+  });
 
   // eventHub.addEventListener("weatherParkSelected", event => {
-  //   const 
+  //   const
   // })
-
-
-
-}
+};

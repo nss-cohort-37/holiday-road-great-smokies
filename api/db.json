@@ -1,3 +1,94 @@
 {
-	"itineraries": []
+  "itineraries": [
+    {
+      "park": "A place",
+      "bizzarie": "Snake World",
+      "eatery": "Louis' Lunch",
+      "id": 1
+    },
+    {
+      "park": "a second place",
+      "bizzarie": "Fountain of Youth",
+      "eatery": "H&H Soul Food",
+      "id": 2
+    },
+    {
+      "park": "a second place",
+      "bizzarie": "Largest Fork in the US",
+      "eatery": "Hy's Steak House",
+      "id": 3
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Elvis Memorial Chapel",
+      "eatery": "Occidental Grill & Seafood",
+      "id": 4
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Elvis Memorial Chapel",
+      "eatery": "McClard's BBQ",
+      "id": 5
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Snake World",
+      "eatery": "H&H Soul Food",
+      "id": 6
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Giant Tattoo Needle",
+      "eatery": "McClard's BBQ",
+      "id": 7
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Snake World",
+      "eatery": "Big Bob Gibson Bar-B-Que",
+      "id": 8
+    },
+    {
+      "park": "a second place",
+      "bizzarie": "Big White Shirt",
+      "eatery": "Big Bob Gibson Bar-B-Que",
+      "id": 9
+    },
+    {
+      "park": "a second place",
+      "bizzarie": "Cabazon Dinosaurs",
+      "eatery": "Occidental Grill & Seafood",
+      "id": 10
+    },
+    {
+      "park": "a second place",
+      "bizzarie": "Big White Shirt",
+      "eatery": "Marge's Pancake House",
+      "id": 11
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Snake World",
+      "eatery": "Jack Fry's",
+      "id": 12
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Snake World",
+      "eatery": "Jack Fry's",
+      "id": 13
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Snake World",
+      "eatery": "Jack Fry's",
+      "id": 14
+    },
+    {
+      "park": "A place",
+      "bizzarie": "Elvis Memorial Chapel",
+      "eatery": "Louis' Lunch",
+      "id": 15
+    }
+  ]
 }
