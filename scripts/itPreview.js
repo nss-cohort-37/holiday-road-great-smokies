@@ -33,18 +33,21 @@ export const itPreview = () => {
 
   const render = Itenerary => {
     contentTarget.innerHTML = Itenerary.map(ite => {
-     return `
-          <div class="park__field">
-              park: <p>${ite.park}</p>
-          </div>
-          <div class="bizzarie__field">
-              bizzarie: <p>${ite.bizzarie}</p>
-          </div>
-          <div class="eatery__field">
-              eatery: <p>${ite.eatery}</p>
-          </div>
+      return `
+      <section class="savedItCard">
+          <article class="park__field">
+              <h2>${ite.park}</h2>
+          </article>
+          <article class="bizzarie__field">
+              bizzarie: ${ite.bizzarie}
+          </article>
+          <article class="eatery__field">
+              eatery: ${ite.eatery}
+          </article>
+          <button class="button--directions">Get Directions</button>
+      </section>
           `;
-    }).join("")
+    }).join("");
   };
 
   eventHub.addEventListener("parkSelected", event => {
