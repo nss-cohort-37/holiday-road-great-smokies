@@ -1,6 +1,6 @@
 @import 'weather.css';
 @import './dropdown.css';
-
+@import 'savedIt.css';
 
 body {
 background-color:#2C2F33;
@@ -23,7 +23,7 @@ dialog {
 }
 
 
-.button--close, .attractionButton, .parkButton, .eateryButton, .button--save {
+.button--close, .attractionButton, .parkButton, .eateryButton, .button--save, .button--directions {
   background-color: #9146FF;
   border: none;
   color: #2c2f33;
@@ -37,3 +37,11 @@ dialog {
   border-radius: 2px;
 }
 
+.itContainer {
+  display: flex;
+
+}
+
+.itPreview {
+  flex-basis: 80%;
+}
