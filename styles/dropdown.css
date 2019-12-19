@@ -4,6 +4,21 @@
     flex-basis: 100%;
     justify-content: space-evenly;
     background-color: #9146FF;
-    padding: 20px;
-    box-shadow: 3px 3px 3px blueviolet;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 3px rgb(91, 38, 170);
 }
+
+
+.parkDropdown, .dropdown, .bizarrieDropdown {
+    background-color: #2c2f33;
+    border: none;
+    color: #99AAB5;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

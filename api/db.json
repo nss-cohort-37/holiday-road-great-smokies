@@ -1,5 +1,10 @@
 {
   "itineraries": [
-
+    {
+      "park": "A place",
+      "bizzarie": "Snake World",
+      "eatery": "Buckhorn Exchange",
+      "id": 1
+    }
   ]
 }

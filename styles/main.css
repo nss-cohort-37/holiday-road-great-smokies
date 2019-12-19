@@ -17,4 +17,19 @@ div {
 dialog {
   background-color: #2c2f33;
   box-shadow: 50px 50px 50px #9146FF;
+  max-width: 80%;
+}
+
+.button--close, .attractionButton, .parkButton, .eateryButton, .button--save {
+  background-color: #9146FF;
+  border: none;
+  color: #2c2f33;
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 16px;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 2px;
 }
