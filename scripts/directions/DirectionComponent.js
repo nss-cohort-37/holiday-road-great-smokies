@@ -43,7 +43,7 @@ export const DirectionComponent = () => {
   const render = directionsData => {
 
     contentTarget.innerHTML = `
-        <h2>Directions</h2>
+        <h2 class="direct">Directions</h2>
         <p>Total Distance: ${Math.floor(MilesConverter(directionsData[0].distance))} miles</p>
         <p>Total Time: ${HourConverter(directionsData[0].time)}</p>
         <p>Instructions: </p>
