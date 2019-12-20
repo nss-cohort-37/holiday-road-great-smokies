@@ -19,7 +19,8 @@ export const itPreview = () => {
         park: document.querySelector("#currentParkName").textContent,
         bizzarie: document.querySelector("#currentAttractionName").textContent,
         eatery: document.querySelector("#currentEateryName").textContent,
-        longLat: document.querySelector("#currentParkName").classList
+        longLat: document.querySelector("#currentParkName").classList,
+        parkCode: document.querySelector("#currentParkCode").classList
       };
 
       saveIteneraries(newIt)
@@ -40,11 +41,13 @@ export const itPreview = () => {
               <h2>${ite.park}</h2>
           </article>
           <article class="bizzarie__field">
-              bizzarie: ${ite.bizzarie}
+              Bizzarie: ${ite.bizzarie}
           </article>
+          <br/>
           <article class="eatery__field">
-              eatery: ${ite.eatery}
+              Eatery: ${ite.eatery}
           </article>
+          <br/>
           <button class="button--directions" id="${ite.longLat[0]} ${ite.longLat[1]}">Get Directions</button>
       </section>
           `;
@@ -55,9 +58,11 @@ export const itPreview = () => {
     const currentParkName = event.detail.park;
     const currentParkDescription = event.detail.description;
     const currentParkLongLat = event.detail.coordinates;
+    const currentParkCode = event.detail.parkCode
     console.log(currentParkName);
     parkContent.innerHTML = `
     <h2 id="currentParkName" class="${currentParkLongLat} value="${currentParkName}">${currentParkName}</h2>
+    <span id="currentParkCode" class="${currentParkCode}"></span>
     <button id="dialog--${event.detail.id}" class="parkButton">Details</button>
     <dialog id="dialog--${event.detail.id}" class="park--description">
     <div>
@@ -108,7 +113,7 @@ export const itPreview = () => {
 
         <button class="button--close">Close Dialog</button>
       </dialog>  
-      <button class="button--save" id="button--save">Save Itenerary </button>
+      <button class="button--save" id="button--save">Save Itinerary </button>
 
     
     

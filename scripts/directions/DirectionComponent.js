@@ -3,7 +3,7 @@ import { getIteneraries, useIteneraries } from "../itineraryProvider.js";
 
 export const DirectionComponent = () => {
   const eventHub = document.querySelector(".container");
-  const contentTarget = document.querySelector(".directions");
+  const contentTarget = document.querySelector(".directionsContainer");
 
   //Write a function converting meters to miles
   const MilesConverter = (meters) => {
@@ -24,8 +24,6 @@ export const DirectionComponent = () => {
     return hours + " hours, " + minutes + " minutes";
   }
 
-  console.log(HourConverter(31395163))
-
   //Add click event to 'Get Directions' button to store the directions (currently inside of the element's ID), and plug them into directions API
   eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.classList.contains("button--directions")) {
@@ -45,6 +43,7 @@ export const DirectionComponent = () => {
   const render = directionsData => {
 
     contentTarget.innerHTML = `
+      <div class="directions">
         <h2 class="direct">Directions</h2>
         <p>Total Distance: ${Math.floor(MilesConverter(directionsData[0].distance))} miles</p>
         <p>Total Time: ${HourConverter(directionsData[0].time)}</p>
@@ -52,7 +51,8 @@ export const DirectionComponent = () => {
         <ul>${directionsData[0].instructions.map(inst => {
             return `<li>${inst.text} for ${Math.round(MilesConverter(inst.distance) * 10 ) / 10 } mile(s)</li>`
         }).join("")}
-        </ul>`;
+        </ul>
+      </div>`;
   }
 
 }
