@@ -49,6 +49,7 @@ export const itPreview = () => {
           </article>
           <br/>
           <button class="button--directions" id="${ite.longLat[0]} ${ite.longLat[1]}">Get Directions</button>
+          <button class="button--events" id="${ite.parkCode}">Get Events</button>
       </section>
           `;
     }).join("");
@@ -61,7 +62,7 @@ export const itPreview = () => {
     const currentParkCode = event.detail.parkCode
     console.log(currentParkName);
     parkContent.innerHTML = `
-    <h2 id="currentParkName" class="${currentParkLongLat} value="${currentParkName}">${currentParkName}</h2>
+    <h2 id="currentParkName" class="${currentParkLongLat}" value="${currentParkName}">${currentParkName}</h2>
     <span id="currentParkCode" class="${currentParkCode}"></span>
     <button id="dialog--${event.detail.id}" class="parkButton">Details</button>
     <dialog id="dialog--${event.detail.id}" class="park--description">
