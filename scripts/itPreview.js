@@ -57,7 +57,7 @@ export const itPreview = () => {
     const currentParkLongLat = event.detail.coordinates;
     console.log(currentParkName);
     parkContent.innerHTML = `
-    <p id="currentParkName" class="${currentParkLongLat} value="${currentParkName}">${currentParkName}</p>
+    <h2 id="currentParkName" class="${currentParkLongLat} value="${currentParkName}">${currentParkName}</h2>
     <button id="dialog--${event.detail.id}" class="parkButton">Details</button>
     <dialog id="dialog--${event.detail.id}" class="park--description">
     <div>
@@ -74,13 +74,17 @@ export const itPreview = () => {
     const currentAttractionName = event.detail.bizzarieName;
     console.log(currentAttractionName);
     attractionContent.innerHTML = `
-    <p id="currentAttractionName" value="${currentAttractionName}">${currentAttractionName}</p>
+    <h2 id="currentAttractionName" value="${currentAttractionName}">${currentAttractionName}</h2>
     <button class="attractionButton" id="dialog--${event.detail.id}">Details</button>
     <dialog id="dialog--${event.detail.id}">
     <div>${event.detail.bizzarieName} </div>
+    <br>
     <div>Description: ${event.detail.description}</div>
+    <br>
     <div>Location: ${event.detail.city}, ${event.detail.state} </div>
+    <br>
     <div>Restroom: ${event.detail.restrooms} </div>
+    <br>
     <button class="button--close">Close </button>
 
     </dialog>
@@ -91,13 +95,16 @@ export const itPreview = () => {
     const currentEateryName = event.detail.eateryName;
     console.log(event.detail.wifi);
     eateryContent.innerHTML = `
-    <p id="currentEateryName">${currentEateryName}</p>
+    <h2 id="currentEateryName">${currentEateryName}</h2>
     <button class="eateryButton" id="dialog--${event.detail.id}">Details</button>
       <dialog class="dialog--${event.detail.id}">
-        <div>Description:${event.detail.description}</div>
-        <div>restrooms:${event.detail.restrooms}</div>
-        <div>wifi:${event.detail.wifi}</div>
-        <div>location:${event.detail.city}, ${event.detail.state}</div>
+        <div>Description: ${event.detail.description}</div>
+        <br>
+        <div>Restrooms: ${event.detail.restrooms}</div>
+        <br>
+        <div>Wifi: ${event.detail.wifi}</div>
+        <br>
+        <div>Location: ${event.detail.city}, ${event.detail.state}</div>
 
         <button class="button--close">Close Dialog</button>
       </dialog>  

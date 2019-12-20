@@ -1,37 +1,5 @@
 {
   "itineraries": [
-    {
-      "park": "Tightwad, Missouri",
-      "bizzarie": "Largest Fork in the US",
-      "eatery": "Deer Park Tavern",
-      "longLat": {
-        "0": "lat:38.3095,",
-        "1": "long:-93.5466",
-        "2": "value="
-      },
-      "id": 1
-    },
-    {
-      "park": "A place",
-      "bizzarie": "Elvis Memorial Chapel",
-      "eatery": "The Old Clam House",
-      "longLat": {
-        "0": "lat:38.916554,",
-        "1": "long:-77.025977",
-        "2": "value="
-      },
-      "id": 2
-    },
-    {
-      "park": "A place",
-      "bizzarie": "Snake World",
-      "eatery": "Joe's Stone Crab",
-      "longLat": {
-        "0": "lat:38.916554,",
-        "1": "long:-77.025977",
-        "2": "value="
-      },
-      "id": 3
-    }
+
   ]
 }
