@@ -10,12 +10,12 @@ let parks = [
     ]
   },
   {
-    fullName:"a second place",
-    description: "blah2",
-    latLong:"lat:38.89231541, long:-77.00381882",
+    fullName:"Tightwad, Missouri",
+    description: "lol wat",
+    latLong:"lat:38.3095, long:-93.5466",
     addresses: [
       {
-        postalCode:"24321",
+        postalCode:"64735",
       }
     ]
   },
