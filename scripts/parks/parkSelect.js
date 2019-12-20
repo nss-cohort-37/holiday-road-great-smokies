@@ -12,7 +12,7 @@ const contentTarget = document.querySelector(".parks")
 
 export const parkHolderText = () => {
   contentTarget.innerHTML=`
-  <h4>Please wait, parks incoming</h4>
+  <h4 class="holder__text">Please wait, parks incoming!</h4>
   `
 }
 

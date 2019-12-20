@@ -25,7 +25,7 @@ getbizzareries().then(bizzarieSelect).then(
     
     
 
-// parkHolderText()
+parkHolderText()
 
 getParks().then(
     () => {
