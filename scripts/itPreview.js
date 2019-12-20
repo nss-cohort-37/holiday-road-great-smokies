@@ -41,13 +41,14 @@ export const itPreview = () => {
               <h2>${ite.park}</h2>
           </article>
           <article class="bizzarie__field">
-              bizzarie: ${ite.bizzarie}
+              Bizzarie: ${ite.bizzarie}
           </article>
+          <br/>
           <article class="eatery__field">
-              eatery: ${ite.eatery}
+              Eatery: ${ite.eatery}
           </article>
+          <br/>
           <button class="button--directions" id="${ite.longLat[0]} ${ite.longLat[1]}">Get Directions</button>
-          <button class="button--events">Get Events</button>
       </section>
           `;
     }).join("");
@@ -112,7 +113,7 @@ export const itPreview = () => {
 
         <button class="button--close">Close Dialog</button>
       </dialog>  
-      <button class="button--save" id="button--save">Save Itenerary </button>
+      <button class="button--save" id="button--save">Save Itinerary </button>
 
     
     
