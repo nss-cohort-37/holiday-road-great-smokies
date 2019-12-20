@@ -46,6 +46,7 @@ export const itPreview = () => {
               eatery: ${ite.eatery}
           </article>
           <button class="button--directions" id="${ite.longLat[0]} ${ite.longLat[1]}">Get Directions</button>
+          <button class="button--events">Get Events</button>
       </section>
           `;
     }).join("");
