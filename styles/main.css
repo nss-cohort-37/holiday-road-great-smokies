@@ -28,7 +28,7 @@ h1 {
 }
 
 
-.button--close, .attractionButton, .parkButton, .eateryButton, .button--save, .button--directions {
+.button--close, .attractionButton, .parkButton, .eateryButton, .button--save, .button--directions, .button--events {
   background-color: #9146FF;
   border: none;
   color: #2c2f33;

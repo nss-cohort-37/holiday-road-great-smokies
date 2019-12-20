@@ -1,28 +1,5 @@
 {
   "itineraries": [
-    {
-      "park": "A place",
-      "bizzarie": "Big White Shirt",
-      "eatery": "Marge's Pancake House",
-      "id": 1
-    },
-    {
-      "park": "a second place",
-      "bizzarie": "Giant Tattoo Needle",
-      "eatery": "Big Bob Gibson Bar-B-Que",
-      "id": 2
-    },
-    {
-      "park": "a third place",
-      "bizzarie": "Elvis Memorial Chapel",
-      "eatery": "Club Paris",
-      "id": 3
-    },
-    {
-      "park": "A place",
-      "bizzarie": "Giant Tattoo Needle",
-      "eatery": "El Charro Cafe",
-      "id": 4
-    }
+
   ]
 }
