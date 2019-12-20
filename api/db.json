@@ -1,5 +1,18 @@
 {
   "itineraries": [
-    
+    {
+      "park": "Augusta Canal National Heritage Area",
+      "bizzarie": "Giant Tattoo Needle",
+      "eatery": "Big Bob Gibson Bar-B-Que",
+      "longLat": {
+        "0": "lat:33.5099067687988,",
+        "1": "long:-82.0053787231445",
+        "2": "value="
+      },
+      "parkCode": {
+        "0": "auca"
+      },
+      "id": 1
+    }
   ]
 }
