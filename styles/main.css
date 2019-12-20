@@ -22,6 +22,11 @@ dialog {
   text-align: center;
 }
 
+h1 {
+  text-shadow: 1px 1px #99AAB5;
+  color: #2C2F33;
+}
+
 
 .button--close, .attractionButton, .parkButton, .eateryButton, .button--save, .button--directions {
   background-color: #9146FF;
