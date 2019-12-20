@@ -67,7 +67,12 @@ export const itPreview = () => {
     <dialog id="dialog--${event.detail.id}" class="park--description">
     <div>
     <h4>Description: </h4>
-    ${currentParkDescription}</div>
+    <p>${currentParkDescription}</p>
+    <h4>Hiking Difficulty: </h4>
+    <p>
+    ${event.detail.difficultyRating}    
+    </p>
+    </div>
     <button class ="button--close" id="closeDialog">Close</button>
     </dialog>
     
