@@ -18,7 +18,8 @@ export const itPreview = () => {
       const newIt = {
         park: document.querySelector("#currentParkName").textContent,
         bizzarie: document.querySelector("#currentAttractionName").textContent,
-        eatery: document.querySelector("#currentEateryName").textContent
+        eatery: document.querySelector("#currentEateryName").textContent,
+        longLat: document.querySelector("#currentParkName").classList
       };
 
       saveIteneraries(newIt)
@@ -44,7 +45,7 @@ export const itPreview = () => {
           <article class="eatery__field">
               eatery: ${ite.eatery}
           </article>
-          <button class="button--directions">Get Directions</button>
+          <button class="button--directions" id="${ite.longLat[0]} ${ite.longLat[1]}">Get Directions</button>
       </section>
           `;
     }).join("");
@@ -53,9 +54,10 @@ export const itPreview = () => {
   eventHub.addEventListener("parkSelected", event => {
     const currentParkName = event.detail.park;
     const currentParkDescription = event.detail.description;
+    const currentParkLongLat = event.detail.coordinates;
     console.log(currentParkName);
     parkContent.innerHTML = `
-    <p id="currentParkName" value="${currentParkName}">${currentParkName}</p>
+    <p id="currentParkName" class="${currentParkLongLat} value="${currentParkName}">${currentParkName}</p>
     <button id="dialog--${event.detail.id}" class="parkButton">Details</button>
     <dialog id="dialog--${event.detail.id}" class="park--description">
     <div>
