@@ -1,32 +1,5 @@
 {
   "itineraries": [
-    {
-      "park": "Augusta Canal National Heritage Area",
-      "bizzarie": "Giant Tattoo Needle",
-      "eatery": "The Old Clam House",
-      "longLat": {
-        "0": "lat:33.5099067687988,",
-        "1": "long:-82.0053787231445",
-        "2": "value="
-      },
-      "parkCode": {
-        "0": "auca"
-      },
-      "id": 1
-    },
-    {
-      "park": "African American Civil War Memorial",
-      "bizzarie": "Elvis Memorial Chapel",
-      "eatery": "Buckhorn Exchange",
-      "longLat": {
-        "0": "lat:38.916554,",
-        "1": "long:-77.025977",
-        "2": "value="
-      },
-      "parkCode": {
-        "0": "afam"
-      },
-      "id": 2
-    }
+    
   ]
 }
