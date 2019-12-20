@@ -1,10 +1,13 @@
 @import 'weather.css';
 @import './dropdown.css';
 @import 'savedIt.css';
+@import 'directions.css';
 
 body {
-background-color:#2C2F33;
-
+/* background-color:#2C2F33; */
+background-image: url("https://live.staticflickr.com/4460/37485143641_4bc2f84b88_b.jpg");
+background-size: 1600px;
+background-attachment: fixed;
 }
 
 div {
@@ -18,13 +21,8 @@ div {
 dialog {
   background-color: #2c2f33;
   box-shadow: 50px 50px 50px #9146FF;
-  max-width: 80%;
+  max-width: 45%;
   text-align: center;
-}
-
-h1 {
-  text-shadow: 1px 1px #99AAB5;
-  color: #2C2F33;
 }
 
 
