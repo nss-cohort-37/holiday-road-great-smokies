@@ -19,7 +19,8 @@ export const itPreview = () => {
         park: document.querySelector("#currentParkName").textContent,
         bizzarie: document.querySelector("#currentAttractionName").textContent,
         eatery: document.querySelector("#currentEateryName").textContent,
-        longLat: document.querySelector("#currentParkName").classList
+        longLat: document.querySelector("#currentParkName").classList,
+        parkCode: document.querySelector("#currentParkCode").classList
       };
 
       saveIteneraries(newIt)
@@ -56,9 +57,11 @@ export const itPreview = () => {
     const currentParkName = event.detail.park;
     const currentParkDescription = event.detail.description;
     const currentParkLongLat = event.detail.coordinates;
+    const currentParkCode = event.detail.parkCode
     console.log(currentParkName);
     parkContent.innerHTML = `
-    <p id="currentParkName" class="${currentParkLongLat} value="${currentParkName}">${currentParkName}</p>
+    <p id="currentParkName" class="${currentParkLongLat}" value="${currentParkName}">${currentParkName}</p>
+    <span id="currentParkCode" class="${currentParkCode}"></span>
     <button id="dialog--${event.detail.id}" class="parkButton">Details</button>
     <dialog id="dialog--${event.detail.id}" class="park--description">
     <div>

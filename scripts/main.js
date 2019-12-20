@@ -17,7 +17,7 @@ import { saveItComponent } from "./savedItenerary/saved.js";
 
 
 
-ParkSelect()
+// ParkSelect()
 getbizzareries().then(bizzarieSelect).then(
     getEateries).then(eaterySelect).then(
         saveItComponent
@@ -27,11 +27,12 @@ getbizzareries().then(bizzarieSelect).then(
 
 // parkHolderText()
 
-// getParks().then(
-//     () => {
-        
-//     }
-//     ).then().then().then()
+getParks().then(
+    () => {
+       ParkSelect()
+    }
+    ).then().then().then()
+
     itPreview()
 Dialogs()
 weatherComponent()

@@ -1,7 +1,4 @@
-import { useDirections, getDirections } from "./DirectionProvider.js";
-import { getIteneraries, useIteneraries } from "../itineraryProvider.js";
-
-export const DirectionComponent = () => {
+export const EventComponent = () => {
   const eventHub = document.querySelector(".container");
   const contentTarget = document.querySelector(".directions");
 
