@@ -57,3 +57,7 @@ dialog {
 .itPreview {
   flex-basis: 80%;
 }
+
+.holder__text {
+  color: #2c2f33;
+}
