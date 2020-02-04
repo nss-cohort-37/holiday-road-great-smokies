@@ -1,5 +1,7 @@
 # Holiday Road from Nashville
 
+![Screencap of the project](./images/screenshot.png)
+
 ## Project Description
 
 Holiday Road is an application that will allow people to build itinerares for their trips to the beautiful national parks maintained by the National Park Service. The starting point of each trip will be Nashville, TN, but the destination will be a national park selected by the user.
